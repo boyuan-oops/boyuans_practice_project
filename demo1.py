@@ -8,23 +8,22 @@ enemy_final_hp = enemy_hp - my_power
 谁的hp先为0，那么谁就输了
 """
 
-hp = 1000
 def fight():
     ##定义四个变量分别代表各自血量和攻击力
-    my_hp = 500
+    my_hp = 1000
     my_power = 200
-    enemy_hp = 200
+    enemy_hp = 800
     enemy_power = 200
     while True:
-        my_hp = hp - enemy_power
-        enemy_final_hp = enemy_hp - my_power
-        if(my_hp == 0 & enemy_final_hp == 0):
+        my_hp = my_hp - enemy_power
+        enemy_hp = enemy_hp - my_power
+        if(my_hp - enemy_hp == 0):
             print("平局")
             break
-        elif(my_hp ==0):
+        elif(my_hp <= 0):
             print("我输了")
             break
-        elif(enemy_final_hp == 0):
+        elif(enemy_hp <= 0):
             print("敌人输了")
             break
 
