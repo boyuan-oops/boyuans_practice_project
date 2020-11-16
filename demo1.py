@@ -17,14 +17,22 @@ def fight():
     while True:
         my_hp = my_hp - enemy_power
         enemy_hp = enemy_hp - my_power
-        if(my_hp - enemy_hp == 0):
+        if(my_hp == enemy_hp):
             print("平局")
+            print("我的血量是",my_hp)
+            print("敌人的血量是",enemy_hp)
             break
         elif(my_hp <= 0):
             print("我输了")
+            print("我的血量是",my_hp)
+            print("敌人的血量是",enemy_hp)
             break
         elif(enemy_hp <= 0):
             print("敌人输了")
+            print("我的血量是",my_hp)
+            print("敌人的血量是",enemy_hp)
             break
+        else:
+            True
 
 fight()
