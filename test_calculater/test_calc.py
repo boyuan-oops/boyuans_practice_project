@@ -11,7 +11,7 @@ round()方法四舍五入保留几位
 import pytest
 import yaml
 
-from calculat_code.calculation import Caculater
+from calculat_code.calculation import Calculater
 
 with open('./calc.yml') as f:
     data = yaml.safe_load(f)
@@ -36,7 +36,7 @@ class TestCalclater:
     # setup方法实例化计算器
     def setup_class(self):
         print("开始计算")
-        self.cal = Caculater()
+        self.cal = Calculater()
 
     def teardown_class(self):
         print("结束计算")

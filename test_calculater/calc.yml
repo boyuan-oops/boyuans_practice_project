@@ -30,3 +30,25 @@ div:
     - 'float'
     - 'minus'
     - 'zero'
+sub:
+  sub_data:
+    - [1, 1, 0]
+    - [300, 400, -100]
+    - [0.2, 0.1, 0.1]
+    - [1, -2, 3]
+  sub_id:
+    - 'zero'
+    - 'int'
+    - 'float'
+    - 'subdata'
+multi:
+  mult_data:
+    - [1, 1, 1]
+    - [-1, 2, -2]
+    - [-1, -2, 2]
+    - [0.1, 0.3, 0.03]
+  mult_id:
+    - 'int'
+    - 'subdata'
+    - 'subdata'
+    - 'float'
